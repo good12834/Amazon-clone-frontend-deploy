@@ -1,0 +1,364 @@
+/* Authentication Page Styles */
+.auth_container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth_card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e7e7e7;
+}
+
+.auth_header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo_container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amazon_official_logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo_link {
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logo_link:hover {
+  opacity: 0.8;
+}
+
+.auth_header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #232f3e;
+  margin-bottom: 8px;
+}
+
+.auth_header p {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Form Styles */
+.auth_form {
+  margin-bottom: 20px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_group label {
+  display: block;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form_group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form_group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.form_group input:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+.password_hint {
+  display: block;
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Button Styles */
+.auth_button {
+  width: 100%;
+  background: linear-gradient(135deg, #ffd814 0%, #ffcc00 100%);
+  color: #0f1111;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.auth_button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ffcc00 0%, #ffb300 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 209, 20, 0.3);
+}
+
+.auth_button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e7e7e7;
+}
+
+.divider span {
+  padding: 0 16px;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Social Authentication */
+.social_auth {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.google_button,
+.facebook_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  background: white;
+  color: #232f3e;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.google_button:hover:not(:disabled) {
+  border-color: #ccc;
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facebook_button:hover:not(:disabled) {
+  border-color: #1877f2;
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(24, 119, 242, 0.2);
+}
+
+.google_button img {
+  width: 18px;
+  height: 18px;
+}
+
+.google_button:disabled,
+.facebook_button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Footer Links */
+.auth_footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth_footer p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.auth_link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth_link:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password Button */
+.forgot_password {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 8px;
+  transition: color 0.2s ease;
+}
+
+.forgot_password:hover:not(:disabled) {
+  color: #0056b3;
+}
+
+.forgot_password:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Terms and Conditions */
+.terms {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.terms p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Messages */
+.error_message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.success_message {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Loading States */
+.loading_container {
+  text-align: center;
+  padding: 40px;
+}
+
+.loading_text {
+  color: #6c757d;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .auth_container {
+    padding: 10px;
+  }
+
+  .auth_card {
+    padding: 30px 20px;
+  }
+
+  .auth_header h1 {
+    font-size: 24px;
+  }
+
+  .form_group input {
+    padding: 10px 14px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .auth_button {
+    padding: 12px 18px;
+    font-size: 15px;
+  }
+
+  .google_button,
+  .facebook_button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Focus States for Accessibility */
+.form_group input:focus,
+.auth_button:focus,
+.google_button:focus,
+.facebook_button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Animation for form transitions */
+.auth_form {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

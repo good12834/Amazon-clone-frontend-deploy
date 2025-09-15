@@ -1,0 +1,388 @@
+/* Order Tracking Modal */
+.tracking_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal_content {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #e9ecef;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.modal_header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #232f3e;
+}
+
+.close_btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #6c757d;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close_btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Tracking Summary */
+.tracking_summary {
+  padding: 20px 25px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.summary_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.summary_item:last-child {
+  border-bottom: none;
+}
+
+.summary_label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.summary_value {
+  font-weight: 500;
+  color: #232f3e;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* Tracking Timeline */
+.tracking_timeline {
+  padding: 25px;
+}
+
+.tracking_timeline h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #232f3e;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e9ecef;
+}
+
+.timeline_item {
+  position: relative;
+  margin-bottom: 30px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.timeline_item.completed {
+  opacity: 1;
+}
+
+.timeline_item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline_marker {
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 3px solid #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.timeline_item.completed .timeline_marker {
+  border-color: #28a745;
+  background: #28a745;
+}
+
+.status_icon {
+  font-size: 14px;
+}
+
+.timeline_item.completed .status_icon {
+  color: white;
+}
+
+.timeline_content {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.timeline_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timeline_status {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.timeline_datetime {
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.timeline_details {
+  margin: 0;
+}
+
+.timeline_description {
+  margin: 0 0 8px 0;
+  color: #495057;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.timeline_location {
+  margin: 0;
+  color: #6c757d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Tracking Actions */
+.tracking_actions {
+  display: flex;
+  gap: 15px;
+  padding: 0 25px 20px 25px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.contact_btn,
+.support_btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact_btn {
+  background: #17a2b8;
+  color: white;
+}
+
+.contact_btn:hover {
+  background: #138496;
+  transform: translateY(-1px);
+}
+
+.support_btn {
+  background: #6c757d;
+  color: white;
+}
+
+.support_btn:hover {
+  background: #5a6268;
+  transform: translateY(-1px);
+}
+
+/* Delivery Information */
+.delivery_info {
+  padding: 20px 25px;
+}
+
+.delivery_info h4 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #232f3e;
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.info_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.info_label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.info_value {
+  font-weight: 500;
+  color: #232f3e;
+  font-size: 14px;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.loading_text {
+  font-size: 16px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tracking_modal {
+    padding: 10px;
+  }
+
+  .modal_content {
+    max-height: 95vh;
+  }
+
+  .modal_header {
+    padding: 15px 20px;
+  }
+
+  .modal_header h2 {
+    font-size: 20px;
+  }
+
+  .tracking_summary {
+    padding: 15px 20px;
+  }
+
+  .tracking_timeline {
+    padding: 20px;
+  }
+
+  .timeline {
+    padding-left: 25px;
+  }
+
+  .timeline_marker {
+    left: -17px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .timeline_content {
+    padding: 12px;
+  }
+
+  .tracking_actions {
+    padding: 0 20px 15px 20px;
+    flex-direction: column;
+  }
+
+  .contact_btn,
+  .support_btn {
+    width: 100%;
+  }
+
+  .delivery_info {
+    padding: 15px 20px;
+  }
+
+  .info_grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal_header h2 {
+    font-size: 18px;
+  }
+
+  .summary_item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .summary_value {
+    text-align: left;
+  }
+
+  .timeline_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .timeline_datetime {
+    align-self: flex-end;
+  }
+}

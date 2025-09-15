@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --primary-color: #febd69;
+    --primary-shade: #d49644;
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 767px) {
+    .d-mobile-none { display: none !important; }
+    .d-mobile-block { display: block !important; }
+    .d-mobile-flex { display: flex !important; }
+}
+
+@media (min-width: 768px) {
+    .d-tablet-none { display: none !important; }
+    .d-tablet-block { display: block !important; }
+    .d-tablet-flex { display: flex !important; }
+}
+
+@media (min-width: 992px) {
+    .d-desktop-none { display: none !important; }
+    .d-desktop-block { display: block !important; }
+    .d-desktop-flex { display: flex !important; }
+}

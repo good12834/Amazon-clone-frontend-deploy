@@ -1,0 +1,1 @@
+export const productsEndPoint = "https://fakestoreapi.com"

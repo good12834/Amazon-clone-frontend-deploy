@@ -1,0 +1,253 @@
+/* Checkout Page Styles */
+.checkout_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.checkout_header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout_header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #232f3e;
+  margin-bottom: 10px;
+}
+
+.checkout_header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* Checkout Steps */
+.checkout_steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  background: #e9ecef;
+  border-radius: 8px;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background: #007bff;
+  color: white;
+}
+
+.step.completed {
+  background: #28a745;
+  color: white;
+}
+
+.step_number {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.step_title {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Checkout Content Layout */
+.checkout_content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.checkout_main {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout_sidebar {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+/* Payment Section */
+.payment_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Order Notes */
+.order_notes {
+  margin-top: 20px;
+}
+
+.order_notes label {
+  display: block;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 8px;
+}
+
+.order_notes textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d5d9d9;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.order_notes textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Checkout Actions */
+.checkout_actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.back_btn,
+.continue_btn {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back_btn {
+  background: #6c757d;
+  color: white;
+}
+
+.back_btn:hover {
+  background: #5a6268;
+  transform: translateY(-1px);
+}
+
+.continue_btn {
+  background: linear-gradient(135deg, #ffd814 0%, #ffcc00 100%);
+  color: #0f1111;
+}
+
+.continue_btn:hover {
+  background: linear-gradient(135deg, #ffcc00 0%, #ffb300 100%);
+  transform: translateY(-1px);
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.loading_text {
+  font-size: 18px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .checkout_content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .checkout_sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout_container {
+    padding: 15px;
+  }
+
+  .checkout_header {
+    padding: 15px;
+  }
+
+  .checkout_header h1 {
+    font-size: 2rem;
+  }
+
+  .checkout_steps {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .step {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .checkout_main {
+    padding: 20px;
+  }
+
+  .checkout_sidebar {
+    padding: 15px;
+  }
+
+  .checkout_actions {
+    flex-direction: column;
+  }
+
+  .back_btn,
+  .continue_btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout_header h1 {
+    font-size: 1.8rem;
+  }
+
+  .checkout_main {
+    padding: 15px;
+  }
+
+  .checkout_sidebar {
+    padding: 12px;
+  }
+}

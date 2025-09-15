@@ -1,0 +1,212 @@
+[
+  {
+    "id": 21,
+    "title": "Wireless Bluetooth Headphones",
+    "price": 99.99,
+    "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+    "category": "electronics",
+    "image": "https://m.media-amazon.com/images/I/41F02ozRJSL._AC_UL480_FMwebp_QL65_.jpg",
+    "variants": {
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    "rating": {
+      "rate": 4.5,
+      "count": 120
+    }
+  },
+  {
+    "id": 22,
+    "title": "Smartphone Case",
+    "price": 19.99,
+    "description": "Protective case for smartphones with shock absorption.",
+    "category": "electronics",
+    "image": "https://m.media-amazon.com/images/I/71ijsfOc4gL._AC_UY327_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 85
+    }
+  },
+  {
+    "id": 23,
+    "title": "Men's Casual Shirt",
+    "price": 29.99,
+    "description": "Comfortable cotton shirt perfect for casual wear.",
+    "category": "men's clothing",
+    "image": "https://m.media-amazon.com/images/I/81SCSaqJU5L._AC_SR480%2C570_.jpg",
+    "variants": {
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Blue", "White", "Black", "Gray"]
+    },
+    "rating": {
+      "rate": 4.0,
+      "count": 200
+    }
+  },
+  {
+    "id": 24,
+    "title": "Women's Dress",
+    "price": 49.99,
+    "description": "Elegant dress for special occasions.",
+    "category": "women's clothing",
+    "image": "https://m.media-amazon.com/images/I/71JJcXALm2L._AC_UL480_FMwebp_QL65_.jpg",
+    
+    "variants": {
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "colors": ["Red", "Black", "Blue", "White"]
+    },
+    "rating": {
+      "rate": 4.3,
+      "count": 150
+    }
+  },
+  {
+    "id": 25,
+    "title": "Coffee Maker",
+    "price": 79.99,
+    "description": "Automatic coffee maker with programmable timer.",
+    "category": "home & kitchen",
+    "image": "https://m.media-amazon.com/images/I/71VPt3SUBoL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 95
+    }
+  },
+  {
+    "id": 26,
+    "title": "Running Shoes",
+    "price": 89.99,
+    "description": "Lightweight running shoes with excellent cushioning.",
+    "category": "sports",
+    "image": "https://m.media-amazon.com/images/I/51PnCq9n+mL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 180
+    }
+  },
+  {
+    "id": 27,
+    "title": "Novel Book",
+    "price": 14.99,
+    "description": "Bestselling novel with engaging storyline.",
+    "category": "books",
+    "image": "https://m.media-amazon.com/images/I/51+Wug6ZrnL._SX342_SY445_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 300
+    }
+  },
+  {
+    "id": 28,
+    "title": "Beauty Cream",
+    "price": 24.99,
+    "description": "Moisturizing cream for daily skincare routine.",
+    "category": "beauty",
+    "image": "https://m.media-amazon.com/images/I/717flhDY7zL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 110
+    }
+  },
+  {
+    "id": 29,
+    "title": "Laptop Stand",
+    "price": 39.99,
+    "description": "Adjustable laptop stand for better ergonomics.",
+    "category": "electronics",
+    "image": "https://m.media-amazon.com/images/I/71mNTsmd4NL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 75
+    }
+  },
+  {
+    "id": 30,
+    "title": "Yoga Mat",
+    "price": 34.99,
+    "description": "Non-slip yoga mat for comfortable workouts.",
+    "category": "sports",
+    "image": "https://m.media-amazon.com/images/I/81Tx4510JRL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 140
+    }
+  },
+  {
+    "id": 31,
+    "title": "Wall Clock",
+    "price": 19.99,
+    "description": "Modern wall clock with silent movement.",
+    "category": "home & kitchen",
+    "image": "https://m.media-amazon.com/images/I/81os6R4wnNL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 60
+    }
+  },
+  {
+    "id": 32,
+    "title": "Sunglasses",
+    "price": 49.99,
+    "description": "Stylish sunglasses with UV protection.",
+    "category": "accessories",
+    "image": "https://m.media-amazon.com/images/I/81QAAUuobZL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 90
+    }
+  },
+  {
+    "id": 33,
+    "title": "Backpack",
+    "price": 59.99,
+    "description": "Durable backpack with multiple compartments.",
+    "category": "accessories",
+    "image": "https://m.media-amazon.com/images/I/61sufLjWbHL._AC_UY327_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 160
+    }
+  },
+  {
+    "id": 34,
+    "title": "Tea Set",
+    "price": 69.99,
+    "description": "Elegant tea set for 4 people.",
+    "category": "home & kitchen",
+    "image": "https://m.media-amazon.com/images/I/81pX5+2OZ7L._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 70
+    }
+  },
+  {
+    "id": 35,
+    "title": "Fitness Tracker",
+    "price": 79.99,
+    "description": "Smart fitness tracker with heart rate monitor.",
+    "category": "electronics",
+    "image": "https://m.media-amazon.com/images/I/71U37m3QsLL._AC_UY327_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 130
+    }
+  },
+  {
+    "id": 36,
+    "title": "Cookbook",
+    "price": 16.99,
+    "description": "Collection of healthy recipes for home cooking.",
+    "category": "books",
+    "image": "https://m.media-amazon.com/images/I/71ZSBDxK0CL._AC_UL480_FMwebp_QL65_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 100
+    }
+  }
+  
+  
+
+
+
+]

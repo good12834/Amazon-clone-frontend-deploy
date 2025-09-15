@@ -1,0 +1,221 @@
+/* Checkout Form Styles */
+.checkout_form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form_section {
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.form_section h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #232f3e;
+}
+
+/* Form Rows and Groups */
+.form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 6px;
+}
+
+.form_group input {
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+
+.form_group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form_group input.error {
+  border-color: #dc3545;
+}
+
+/* Card Element Container */
+.card_element_container {
+  margin-bottom: 15px;
+}
+
+.card_element {
+  padding: 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  background: white;
+  transition: border-color 0.3s ease;
+}
+
+.card_element:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Error Message */
+.error_message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Security Note */
+.security_note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.security_icon {
+  font-size: 24px;
+  color: #155724;
+}
+
+.security_text strong {
+  display: block;
+  color: #155724;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.security_text p {
+  margin: 0;
+  color: #155724;
+  font-size: 12px;
+}
+
+/* Pay Button */
+.pay_button {
+  width: 100%;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pay_button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.pay_button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Processing State */
+.processing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form_section {
+    padding: 20px;
+  }
+
+  .form_section h3 {
+    font-size: 18px;
+  }
+
+  .form_row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .security_note {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .pay_button {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form_section {
+    padding: 15px;
+  }
+
+  .form_group input {
+    padding: 10px 14px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .card_element {
+    padding: 12px;
+  }
+
+  .security_note {
+    padding: 12px;
+  }
+
+  .pay_button {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+}
