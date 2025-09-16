@@ -1,7 +1,9 @@
 import axios from "axios";
 
-// Use environment variable for API URL, fallback to local payment server for development
+// Use environment variable for API URL, fallback to deployed server, then local for development
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ||
+//deploy server.j on render.com
+                      'https://amazon-clone-frontend-deploy.onrender.com' ||
                       'http://localhost:5003';
 
 const axiosinstance = axios.create({
